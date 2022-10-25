@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>予備実験1</title>
+    </head>
+    <body>
+        <h1>これから予備実験1を開始します</h1>
+        <h3>・実験では英単語の学習を行ってもらいます。</h3>
+        <h3>・初めにテストを行ってから、そのテストの単語に関する課題を行ってもらいます。</h3>
+        <h3>・テスト1から順番に学習実験を行うようお願いします。</h3>
+        <h3>・課題を終えるごとに【2分間】時間を取ってからテストを行うようお願いします。</h3>
+        <h3>・テストを1回終えるごとに点数入力のボタンを押し、点数を入力するようお願いします。</h3>
+        <h3>・テスト4が終わったら、アンケートからテストの点数とアンケートへの回答をお願いします。</h3>
+        <p>　※点数入力ごとにテキストファイルが保存されるので、点数の入力にはそちらをご活用下さい。</p>
+        
+        <p>現在時刻は<span id="real-time"></span>です</p>
+        <p>点数入力はこちらから→<a href="https://yamadayamada0000.github.io/tokai3/" target="_blank" rel="noopener noreferrer">点数入力</a></p>
+
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113055&course_path=a354f21ec6415221996d802cd4eecf2b" target="_blank" rel="noopener noreferrer">テスト1</a></p>
+        
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113034&course_path=c8a841466e2a2e4d2ccee9dea0dfd5e5" target="_blank" rel="noopener noreferrer">課題1</a></p>
+        
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113056&course_path=cd344f7f20ee2b130fedd4ad37f56f5a" target="_blank" rel="noopener noreferrer">テスト2</a></p>
+        
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113035&course_path=531ea7aba7cad63e7b2f921f016e169e" target="_blank" rel="noopener noreferrer">課題2</a></p>
+        
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113057&course_path=ff18f48974045b46f7dea95077b04bf8" target="_blank" rel="noopener noreferrer">テスト3</a></p>
+        
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113035&course_path=531ea7aba7cad63e7b2f921f016e169e" target="_blank" rel="noopener noreferrer">課題3</a></p>
+        
+        <p>　<a href="https://quizgenerator.net/quizhoster/?action=play&course_id=113058&course_path=fc4d2f7ebaddb46dd048b10415a6465f" target="_blank" rel="noopener noreferrer">テスト4</a></p>
+
+        <p>　<a href="https://docs.google.com/forms/d/e/1FAIpQLScvArj21cQPmxJ1imDhTG8L4jMd1T7z0DAlVnQdMCK_ltxskw/viewform" target="_blank" rel="noopener noreferrer">アンケート</a></p>
+
+        <p>以上で実験は終了となります。ご協力ありがとうございました！</p>
+
+        <script type="text/javascript">
+            function Time() {
+               var realTime = new Date();
+               var hour = realTime.getHours();
+               var minutes  = realTime.getMinutes();
+               var seconds  = realTime.getSeconds();
+               var text = hour + ":" + minutes + ":" + seconds;
+               document.getElementById("real-time").innerHTML = text;
+            }
+            setInterval('Time()',1000);
+              </script>
+
+    </body>
+</html>
